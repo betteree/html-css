@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>테이블 관련 요소 | Techit</title>
+  </head>
+  <body>
+    <h1>테이블 관련 요소</h1>
+    <style>
+      th,
+      td {
+        border: 1px solid currentColor;
+      }
+    </style>
+    <table border="1" cellspacing="0">
+      <caption>
+        과목별 성적표
+      </caption>
+      <thead>
+        <!-- 행 tr 열 th-->
+        <tr>
+          <th scope="col">이름</th>
+          <th scope="col">HTML</th>
+          <th scope="col">CSS</th>
+          <th scope="col">Javascript</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">홍길동</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <th scope="row">이영희</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+      </tbody>
+      <tbody>
+        <tr>
+          <th scope="row">나성실</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+        <tr>
+          <th scope="row">김철수</th>
+          <td>95</td>
+          <td>87</td>
+          <td>92</td>
+        </tr>
+      </tbody>
+    </table>
+    <table>
+      <tr>
+        <th>Date</th>
+        <th>Event</th>
+        <th>Venue</th>
+      </tr>
+      <tr>
+        <td>12 February</td>
+        <td>Waltz with Strauss</td>
+        <td>Main Hall</td>
+      </tr>
+    </table>
+    <hr />
+    <table>
+      <caption>
+        <span> 학습시간, 난이도, 등등을 나타낸 표 </span>
+      </caption>
+      <tr>
+        <th>학습시간</th>
+        <td>20시간</td>
+        <th>난이도</th>
+        <td>초급</td>
+      </tr>
+      <tr>
+        <th>교육비지원</th>
+        <td>비환급</td>
+        <th>평가항목</th>
+        <td>출석률 100%</td>
+      </tr>
+      <tr>
+        <th>수료기준</th>
+        <td>80점이상시 수료</td>
+        <th>정원</th>
+        <td>24명</td>
+      </tr>
+      <tr>
+        <th>교재정보</th>
+        <td>입문자를 위한 git과 html&css</td>
+      </tr>
+
+      <tr />
+    </table>
+  </body>
+</html>
