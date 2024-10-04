@@ -1,0 +1,51 @@
+/* 그 밑에 자식 값들이 모두 상속되어져서 바뀐다 */
+body {
+  font-family: "Pretendard Variable", Pretendard, sans-serif;
+  margin: 20px;
+  border: 10px solid green;
+  padding: 50px;
+  color: darkblue;
+}
+
+/* 니가 가져야 할 우선순위가 이거야 라고 한다면 다시 순서를 지정 하면 됨 */
+@layer techit,likelion;
+
+/* 선언순서에 영향을 받아 마지막거가 적용된다  */
+@layer likelion {
+  p {
+    color: red;
+  }
+}
+@layer techit {
+  p {
+    color: green !important;
+    /* important는 다른 것들 다 무력화! 이게 제일 우선이 된다 */
+  }
+}
+
+@layer likelion {
+  h1 {
+    background-color: yellow;
+  }
+}
+@layer techit {
+  h2 {
+    color: tomato;
+  }
+}
+
+/* 상속 vs 직접 지정 값하면 직접지정이 이긴다 */
+/* h1 {
+  color: green;
+}
+p {
+  color: orange;
+}
+
+#school.likelion {
+  color: gray;
+}
+
+#school {
+  color: red;
+} */
