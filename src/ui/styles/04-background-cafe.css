@@ -1,0 +1,35 @@
+@import "./../../common/best-reset.css";
+@import "./../../common/a11y.css";
+@import "./../../common/base.css";
+
+body {
+  justify-content: center;
+}
+.img_wrapper_container {
+  display: flex;
+  justify-content: center;
+}
+
+.img_wrapper {
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img_menu {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+}
+
+.menu_text {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  border-bottom: 2px solid white; /* 두께와 색상 설정 */
+  padding-bottom: 5px;
+}
