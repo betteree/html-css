@@ -24,16 +24,11 @@ body {
   .number {
     inline-size: 10%;
   }
-
-  .name {
-    inline-size: 20%;
-  }
-
-  .email {
+  .content {
     inline-size: 40%;
   }
 
-  .phone {
+  .date {
     inline-size: 30%;
   }
 
