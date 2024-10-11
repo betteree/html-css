@@ -33,7 +33,10 @@
   --cell-spacing-body: var(--spacing-md);
 
   table-layout: fixed;
+  /* auto 레이아웃에서는 테이블이 처음부터 데이터를 보고 열 너비를 결정합니다. 즉, 테이블의 내용이 많거나 넓으면 그만큼 열이 넓어집니다. */
   border-collapse: collapse;
+  /* 이 속성은 테이블의 셀과 셀 사이의 테두리(border)가 어떻게 처리될지를 결정합니다.
+  seperate 는 셀 사이의 테두리가 서로 독립적입니다 */
   border-spacing: 0;
   inline-size: 680px;
   color: var(--text-color);
@@ -51,10 +54,12 @@
 
   .ediya-news__date {
     inline-size: 85px;
+    /* 해당 열 사이즈 얼마나 크게 작게? */
     text-align: center;
   }
 
   tbody tr {
+    /* 테두리 두깨 결정 */
     border-block-start: var(--border-thin) solid currentColor;
   }
 
