@@ -57,3 +57,22 @@ button {
     }
   }
 }
+
+@keyframes spinner {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+.loading-spinner {
+  inline-size: 48px;
+  block-size: 48px;
+  color: var(--red);
+
+  svg {
+    animation: spinner 1s infinite steps(12);
+  }
+}
